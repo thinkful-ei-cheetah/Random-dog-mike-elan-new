@@ -13,11 +13,11 @@ function displayResults(responseJson) {
   console.log(responseJson);
 
   if (responseJson.status === 'success'){
-    $('.results-img').replaceWith(
-      `<img src="${responseJson.message}" class="results-img">`
+    $('.results-image').replaceWith(
+      `<img src="${responseJson.message}" class="results-image">`
     );
   } else {
-    $('.results-img').replaceWith(
+    $('.results-image').replaceWith(
       '<p>"ERROR! Not Found!"</p>'
     );}
 
