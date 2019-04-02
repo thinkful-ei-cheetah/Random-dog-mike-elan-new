@@ -18,7 +18,7 @@ function displayResults(responseJson) {
     );
   } else {
     $('.results-img').replaceWith(
-      '<img src=\'https://www.elegantthemes.com/blog/wp-content/uploads/2017/07/404-error.png\' class=\'results-img\'>'
+      '<p>"ERROR! Not Found!"</p>'
     );}
 
   //display the results section
