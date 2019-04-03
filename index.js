@@ -11,10 +11,11 @@ function getDogImage(numberOfDogs) {
 
 function displayResults(responseJson) {
   console.log(responseJson);
-  $('.image').html('');
+  $('.images').html('');
   for(let i = 0; i < responseJson.message.length; i++) {
     $('.images').append(`<img src="${responseJson.message[i]}" class="results-img">`);
   }
+  
   //display the results section
   $('.results').removeClass('hidden');
 }
